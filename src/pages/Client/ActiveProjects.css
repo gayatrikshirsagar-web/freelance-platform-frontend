@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+}
+
+.active-projects-page {
+    min-height: 100vh;
+    background: #f6f7fb;
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER */
+
+.active-projects-header {
+    background: white;
+    padding: 25px 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.active-projects-header h1 {
+    margin: 0 0 7px;
+
+    font-size: 28px;
+    color: #172033;
+}
+
+.active-projects-header p {
+    margin: 0;
+
+    color: #707991;
+    font-size: 14px;
+}
+
+
+/* BACK BUTTON */
+
+.active-projects-back-button {
+    border: none;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+.active-projects-back-button:hover {
+    background: #e0e7ff;
+}
+
+
+/* CONTENT */
+
+.active-projects-content {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 30px;
+}
+
+
+/* LOADING / ERROR */
+
+.active-projects-message {
+    background: white;
+
+    border: 1px solid #e7e9f0;
+
+    border-radius: 14px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: #707991;
+}
+
+.active-projects-message.error {
+    color: #dc2626;
+}
+
+
+/* GRID */
+
+.active-projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+
+/* CARD */
+
+.active-project-card {
+    background: white;
+
+    border: 1px solid #e7e9f0;
+
+    border-radius: 14px;
+
+    padding: 23px;
+
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.active-project-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transform: translateY(-2px);
+}
+
+
+/* CARD TOP */
+
+.active-project-card-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 17px;
+}
+
+
+/* STATUS */
+
+.project-status {
+    background: #fef3c7;
+
+    color: #b45309;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* PROJECT ID */
+
+.project-id {
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+
+/* TITLE */
+
+.active-project-card h2 {
+    margin: 0 0 10px;
+
+    font-size: 19px;
+
+    color: #172033;
+}
+
+
+/* DESCRIPTION */
+
+.project-description {
+    color: #707991;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0 0 20px;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 3;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* DETAILS */
+
+.project-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    border-top: 1px solid #edf0f5;
+
+    border-bottom: 1px solid #edf0f5;
+
+    padding: 16px 0;
+}
+
+
+.project-detail {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+
+.detail-label {
+    color: #8a91a3;
+
+    font-size: 12px;
+}
+
+
+.project-detail strong {
+    color: #374151;
+
+    font-size: 13px;
+
+    text-align: right;
+
+    max-width: 65%;
+}
+
+
+/* FOOTER */
+
+.active-project-card-footer {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 18px;
+}
+
+
+/* VIEW BUTTON */
+
+.view-project-button {
+    border: none;
+
+    background: #6258f5;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.view-project-button:hover {
+    background: #5147e8;
+}
+
+
+/* EMPTY STATE */
+
+.active-projects-empty {
+    background: white;
+
+    border: 1px solid #e7e9f0;
+
+    border-radius: 16px;
+
+    padding: 70px 30px;
+
+    text-align: center;
+}
+
+.empty-project-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.active-projects-empty h2 {
+    margin: 0 0 8px;
+
+    color: #172033;
+}
+
+
+.active-projects-empty p {
+    margin: 0 0 22px;
+
+    color: #7b8397;
+
+    font-size: 14px;
+}
+
+
+.active-projects-empty button {
+    border: none;
+
+    background: #6258f5;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.active-projects-empty button:hover {
+    background: #5147e8;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    .active-projects-header {
+        padding: 22px 25px;
+    }
+
+    .active-projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .active-projects-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .active-projects-back-button {
+        width: 100%;
+    }
+
+    .active-projects-content {
+        padding: 25px 18px;
+    }
+
+    .active-project-card {
+        padding: 20px;
+    }
+
+    .project-detail {
+        flex-direction: column;
+
+        gap: 4px;
+    }
+
+    .project-detail strong {
+        max-width: 100%;
+
+        text-align: left;
+    }
+
+    .active-project-card-footer {
+        justify-content: stretch;
+    }
+
+    .view-project-button {
+        width: 100%;
+    }
+}

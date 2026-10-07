@@ -1,0 +1,173 @@
+.notifications-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 30px;
+}
+
+.notifications-container {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 0 auto;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    overflow: hidden;
+}
+
+.notifications-header {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 25px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.notifications-header h2 {
+    margin: 0;
+
+    font-size: 22px;
+}
+
+.notifications-header p {
+    margin: 5px 0 0;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.notifications-back-button {
+    border: none;
+
+    background: #f1f3f5;
+
+    padding: 10px 15px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.notifications-content {
+    padding: 25px;
+}
+
+.notification-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.notification-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    background: white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.notification-card:hover {
+    background: #f8fafc;
+}
+
+.notification-card.unread {
+    background: #eff6ff;
+
+    border-left: 4px solid #2563eb;
+}
+
+.notification-icon {
+    font-size: 22px;
+}
+
+.notification-details {
+    flex: 1;
+}
+
+.notification-details h3 {
+    margin: 0 0 6px;
+
+    font-size: 16px;
+}
+
+.notification-details p {
+    margin: 0 0 8px;
+
+    color: #555;
+
+    line-height: 1.5;
+}
+
+.notification-details span {
+    color: #888;
+
+    font-size: 12px;
+}
+
+.unread-dot {
+    width: 9px;
+
+    height: 9px;
+
+    background: #2563eb;
+
+    border-radius: 50%;
+
+    margin-top: 6px;
+}
+
+.notification-status {
+    text-align: center;
+
+    color: #777;
+
+    margin-top: 40px;
+}
+
+.notification-error {
+    text-align: center;
+
+    color: #dc2626;
+
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+
+    .notifications-page {
+        padding: 10px;
+    }
+
+    .notifications-container {
+        min-height: 90vh;
+    }
+
+    .notifications-header {
+        padding: 15px;
+    }
+
+    .notifications-content {
+        padding: 15px;
+    }
+}

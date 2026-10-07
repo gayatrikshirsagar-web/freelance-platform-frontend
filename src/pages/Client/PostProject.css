@@ -1,0 +1,263 @@
+/* ========================= */
+/* PAGE */
+/* ========================= */
+
+.post-project-page {
+    min-height: 100vh;
+    background: #f6f7fb;
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.post-project-header {
+    background: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.post-project-header h1 {
+    margin: 0 0 7px;
+    font-size: 28px;
+    color: #172033;
+}
+
+.post-project-header p {
+    margin: 0;
+    color: #707991;
+    font-size: 14px;
+}
+
+
+/* ========================= */
+/* BACK BUTTON */
+/* ========================= */
+
+.post-project-back-button {
+    border: none;
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.post-project-back-button:hover {
+    background: #e0e7ff;
+}
+
+
+/* ========================= */
+/* MAIN CONTENT */
+/* ========================= */
+
+.post-project-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.post-project-card {
+    background: white;
+    border: 1px solid #e7e9f0;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ========================= */
+/* CARD HEADER */
+/* ========================= */
+
+.post-project-card-header {
+    border-bottom: 1px solid #edf0f5;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.post-project-card-header h2 {
+    margin: 0 0 7px;
+    font-size: 21px;
+    color: #172033;
+}
+
+.post-project-card-header p {
+    margin: 0;
+    color: #7b8397;
+    font-size: 13px;
+}
+
+
+/* ========================= */
+/* FORM */
+/* ========================= */
+
+.post-project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #dfe3eb;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: white;
+    outline: none;
+    transition: border 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #6258f5;
+    box-shadow: 0 0 0 3px rgba(98, 88, 245, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* ========================= */
+/* TWO COLUMN ROW */
+/* ========================= */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* ========================= */
+/* ACTION BUTTONS */
+/* ========================= */
+
+.post-project-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 22px;
+    border-top: 1px solid #edf0f5;
+}
+
+.cancel-project-button,
+.submit-project-button {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* CANCEL */
+
+.cancel-project-button {
+    background: #f1f2f6;
+    color: #4b5563;
+}
+
+.cancel-project-button:hover {
+    background: #e5e7eb;
+}
+
+
+/* SUBMIT */
+
+.submit-project-button {
+    background: #6258f5;
+    color: white;
+}
+
+.submit-project-button:hover {
+    background: #5147e8;
+}
+
+.submit-project-button:disabled {
+    background: #aaa6ef;
+    cursor: not-allowed;
+}
+
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 700px) {
+
+    .post-project-header {
+        padding: 20px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .post-project-back-button {
+        width: 100%;
+    }
+
+    .post-project-content {
+        padding: 25px 18px;
+    }
+
+    .post-project-card {
+        padding: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .post-project-actions {
+        flex-direction: column;
+    }
+
+    .cancel-project-button,
+    .submit-project-button {
+        width: 100%;
+    }
+}

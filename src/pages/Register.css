@@ -1,0 +1,485 @@
+/* ================= PAGE ================= */
+
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    background: #f8f9ff;
+}
+
+
+/* ================= LEFT SIDE ================= */
+
+.register-left {
+    width: 45%;
+    min-height: 100vh;
+    padding: 45px 7%;
+    background: #171d2d;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.register-left::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: #5b5cf0;
+    opacity: 0.12;
+    top: -180px;
+    left: -150px;
+}
+
+.register-left::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #7c7dff;
+    opacity: 0.08;
+    bottom: -150px;
+    right: -120px;
+}
+
+.register-brand {
+    position: relative;
+    z-index: 2;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.register-brand span {
+    color: #7d7eff;
+}
+
+.register-left-content {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    margin-top: 160px;
+}
+
+.register-badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #a7a8ff;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.register-left-content h1 {
+    font-size: 48px;
+    line-height: 1.12;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.register-left-content h1 span {
+    color: #8586ff;
+}
+
+.register-left-content > p {
+    margin-top: 25px;
+    color: #aeb5c5;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.benefits {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #d6d9e2;
+    font-size: 14px;
+}
+
+.benefit span {
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(91, 92, 240, 0.25);
+    color: #8586ff;
+    font-weight: bold;
+}
+
+
+/* ================= BACK HOME ================= */
+
+.back-home {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 10;
+    border: none;
+    background: transparent;
+    color: #8c93a5;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.back-home:hover {
+    color: #5b5cf0;
+}
+
+
+/* ================= RIGHT SIDE ================= */
+
+.register-right {
+    width: 55%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: #f8f9ff;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 530px;
+}
+
+
+/* ================= HEADER ================= */
+
+.form-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.small-logo {
+    display: none;
+}
+
+.form-header h2 {
+    font-size: 31px;
+    color: #1b2233;
+    margin: 0;
+    letter-spacing: -0.8px;
+}
+
+.form-header p {
+    margin-top: 10px;
+    color: #858c9d;
+    font-size: 14px;
+}
+
+
+/* ================= ROLE QUESTION ================= */
+
+.role-question {
+    margin-bottom: 15px;
+}
+
+.role-question h3 {
+    color: #303648;
+    font-size: 15px;
+}
+
+
+/* ================= ROLE CARDS ================= */
+
+.role-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.role-card {
+    width: 100%;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border: 1px solid #e2e4ed;
+    border-radius: 13px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.role-card:hover {
+    border-color: #5b5cf0;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(40, 45, 80, 0.08);
+}
+
+.role-icon {
+    min-width: 60px;
+    height: 60px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    margin-right: 18px;
+}
+
+.student-icon {
+    background: #eeeeff;
+}
+
+.client-icon {
+    background: #fff2e8;
+}
+
+.role-content {
+    flex: 1;
+}
+
+.role-content h3 {
+    margin: 0;
+    font-size: 17px;
+    color: #242a3a;
+}
+
+.role-content p {
+    margin: 7px 30px 0 0;
+    color: #858c9d;
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.role-arrow {
+    font-size: 22px;
+    color: #5b5cf0;
+}
+
+
+/* ================= LOGIN LINK ================= */
+
+.login-link {
+    text-align: center;
+    margin-top: 28px;
+    color: #858c9d;
+    font-size: 13px;
+}
+
+.login-link button {
+    border: none;
+    background: transparent;
+    color: #5b5cf0;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+/* ================= CHANGE ROLE ================= */
+
+.change-role {
+    border: none;
+    background: transparent;
+    color: #697386;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.change-role:hover {
+    color: #5b5cf0;
+}
+
+
+/* ================= SELECTED ROLE ================= */
+
+.selected-role-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #eeeeff;
+    font-size: 25px;
+    margin: 0 auto 15px;
+}
+
+
+/* ================= FORM ================= */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.input-group label {
+    color: #343b4d;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #dfe2eb;
+    border-radius: 8px;
+    background: white;
+    outline: none;
+    font-size: 13px;
+    color: #303648;
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #5b5cf0;
+    box-shadow: 0 0 0 3px rgba(91, 92, 240, 0.08);
+}
+
+.input-group input::placeholder {
+    color: #a6acb9;
+}
+
+/* ================= PASSWORD SHOW / HIDE ================= */
+
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-wrapper input {
+    width: 100%;
+    padding-right: 48px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: transparent;
+    color: #697386;
+
+    cursor: pointer;
+    font-size: 18px;
+
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.2s;
+}
+
+.password-toggle:hover {
+    color: #5b5cf0;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.password-toggle:focus {
+    outline: none;
+}
+
+/* ================= TERMS ================= */
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: #7d8495;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-top: 3px;
+}
+
+.terms input {
+    margin-top: 2px;
+}
+
+
+/* ================= CREATE ACCOUNT ================= */
+
+.create-account-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #5b5cf0;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 5px;
+    box-shadow: 0 7px 20px rgba(91, 92, 240, 0.2);
+    transition: 0.25s;
+}
+
+.create-account-button:hover {
+    background: #4748d8;
+    transform: translateY(-1px);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .register-left {
+        display: none;
+    }
+
+    .register-right {
+        width: 100%;
+        padding: 40px 25px;
+    }
+
+    .small-logo {
+        display: block;
+        color: #1b2233;
+        font-size: 22px;
+        font-weight: 800;
+        margin-bottom: 25px;
+    }
+
+    .small-logo span {
+        color: #5b5cf0;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .register-right {
+        padding: 30px 18px;
+    }
+
+    .form-header h2 {
+        font-size: 25px;
+    }
+
+    .role-card {
+        padding: 17px;
+    }
+
+    .role-icon {
+        min-width: 50px;
+        height: 50px;
+    }
+}

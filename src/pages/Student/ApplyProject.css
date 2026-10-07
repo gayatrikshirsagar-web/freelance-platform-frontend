@@ -1,0 +1,113 @@
+.apply-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 30px;
+}
+
+.apply-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.back-button {
+    border: none;
+    background: transparent;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.apply-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.apply-card h1 {
+    margin-bottom: 25px;
+}
+
+.project-summary {
+    background: #f7f8fc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.project-summary h2 {
+    margin-bottom: 10px;
+}
+
+.project-summary p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.summary-details {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group textarea,
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d5d9e2;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group textarea:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+.submit-application-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-application-button:hover {
+    background: #4338ca;
+}
+
+.submit-application-button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.apply-message {
+    max-width: 700px;
+    margin: 100px auto;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+}

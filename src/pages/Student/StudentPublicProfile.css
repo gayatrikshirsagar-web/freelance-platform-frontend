@@ -1,0 +1,254 @@
+/* ================= PAGE ================= */
+
+.public-profile-page {
+    min-height: 100vh;
+    background: #f8f9ff;
+    color: #242a3a;
+}
+
+
+/* ================= TOP BAR ================= */
+
+.public-profile-topbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    background: white;
+    border-bottom: 1px solid #e5e7ef;
+}
+
+.public-profile-topbar h1 {
+    margin: 0 auto;
+    font-size: 22px;
+    color: #1b2233;
+}
+
+.public-profile-back {
+    border: none;
+    background: transparent;
+    color: #5b5cf0;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.public-profile-back:hover {
+    color: #4748d8;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.public-profile-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+
+/* ================= HEADER ================= */
+
+.public-profile-header {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 5px 20px rgba(40, 45, 80, 0.06);
+}
+
+.public-profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #eeeeff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.public-profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.public-profile-avatar span {
+    font-size: 38px;
+    font-weight: 700;
+    color: #5b5cf0;
+}
+
+.public-profile-info {
+    flex: 1;
+}
+
+.public-profile-info h2 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    color: #1b2233;
+}
+
+.public-profile-info p {
+    margin: 5px 0;
+    color: #737b8e;
+    font-size: 14px;
+}
+
+.public-verification {
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #eeeeff;
+    color: #5b5cf0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.public-profile-section {
+    margin-top: 22px;
+    padding: 28px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(40, 45, 80, 0.05);
+}
+
+.public-profile-section h2 {
+    margin: 0 0 20px;
+    color: #242a3a;
+    font-size: 20px;
+}
+
+.public-bio {
+    color: #697386;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* ================= GRID ================= */
+
+.public-profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.public-profile-field {
+    padding: 17px;
+    border: 1px solid #e5e7ef;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.public-profile-field span {
+    font-size: 12px;
+    color: #858c9d;
+}
+
+.public-profile-field strong {
+    font-size: 14px;
+    color: #303648;
+}
+
+
+/* ================= ACTIONS ================= */
+
+.public-profile-actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.public-profile-actions button {
+    padding: 13px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #5b5cf0;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.public-profile-actions button:hover {
+    background: #4748d8;
+}
+
+
+/* ================= LOADING ================= */
+
+.public-profile-loading {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.public-profile-loading h2 {
+    color: #5b5cf0;
+}
+
+
+/* ================= ERROR ================= */
+
+.public-profile-error {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.public-profile-error h2 {
+    color: #d9534f;
+}
+
+.public-profile-error button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #5b5cf0;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .public-profile-topbar {
+        padding: 0 20px;
+    }
+
+    .public-profile-topbar h1 {
+        font-size: 18px;
+    }
+
+    .public-profile-container {
+        width: 94%;
+    }
+
+    .public-profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .public-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .public-verification {
+        margin-top: 5px;
+    }
+}

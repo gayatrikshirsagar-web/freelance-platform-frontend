@@ -1,0 +1,398 @@
+.client-applications-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.client-applications-header {
+    background: white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.client-applications-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #1f2937;
+}
+
+.client-applications-header p {
+    margin-top: 6px;
+    color: #6b7280;
+}
+
+.client-header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* ========================= */
+/* BUTTONS */
+/* ========================= */
+
+.back-dashboard-button,
+.logout-button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.back-dashboard-button {
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+.logout-button {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.back-dashboard-button:hover {
+    background: #e0e7ff;
+}
+
+.logout-button:hover {
+    background: #fecaca;
+}
+
+/* ========================= */
+/* MAIN CONTENT */
+/* ========================= */
+
+.client-applications-content {
+    padding: 35px 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ========================= */
+/* SUMMARY */
+/* ========================= */
+
+.applications-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.applications-summary h2 {
+    margin: 0;
+    color: #1f2937;
+}
+
+.applications-summary span {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* ========================= */
+/* APPLICATION CARD */
+/* ========================= */
+
+.application-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.application-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.application-card-header h3 {
+    margin: 0;
+    font-size: 21px;
+    color: #111827;
+}
+
+.application-id {
+    margin-top: 7px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* ========================= */
+/* STATUS */
+/* ========================= */
+
+.application-status {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Pending */
+
+.application-status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Accepted */
+
+.application-status.accepted {
+    background: #dcfce7;
+    color: #166534;
+}
+
+/* Rejected */
+
+.application-status.rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Withdrawn */
+
+.application-status.withdrawn {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+/* ========================= */
+/* DETAILS */
+/* ========================= */
+
+.application-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 20px 0;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.detail-label {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.detail-value {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* ========================= */
+/* COVER LETTER */
+/* ========================= */
+
+.cover-letter-section {
+    margin-top: 20px;
+}
+
+.cover-letter-section h4 {
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.cover-letter-section p {
+    background: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* ========================= */
+/* ACTIONS */
+/* ========================= */
+
+.application-card-actions {
+    margin-top: 22px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* View Project */
+
+.view-project-button {
+    border: none;
+    background: #4f46e5;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.view-project-button:hover {
+    background: #4338ca;
+}
+
+/* ========================= */
+/* ACCEPT APPLICATION */
+/* ========================= */
+
+.accept-application-button {
+    border: none;
+    background: #16a34a;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.accept-application-button:hover {
+    background: #15803d;
+}
+
+/* ========================= */
+/* REJECT APPLICATION */
+/* ========================= */
+
+.reject-application-button {
+    border: none;
+    background: #dc2626;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.reject-application-button:hover {
+    background: #b91c1b;
+}
+
+/* ========================= */
+/* LOADING / ERROR */
+/* ========================= */
+
+.applications-message,
+.applications-error,
+.no-applications {
+    background: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.applications-error {
+    color: #b91c1c;
+}
+
+/* ========================= */
+/* EMPTY STATE */
+/* ========================= */
+
+.empty-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.no-applications h2 {
+    color: #1f2937;
+}
+
+.no-applications p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.no-applications button {
+    border: none;
+    background: #4f46e5;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    .application-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-applications-header {
+        padding: 20px 25px;
+    }
+
+    .client-applications-content {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .client-applications-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .client-header-actions {
+        width: 100%;
+    }
+
+    .back-dashboard-button,
+    .logout-button {
+        flex: 1;
+    }
+
+    .application-card {
+        padding: 20px;
+    }
+
+    .application-card-header {
+        flex-direction: column;
+    }
+
+    .application-details {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stack all action buttons */
+
+    .application-card-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .view-project-button,
+    .accept-application-button,
+    .reject-application-button {
+        width: 100%;
+    }
+}

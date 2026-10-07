@@ -1,0 +1,345 @@
+.saved-projects-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px 60px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.saved-projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.saved-projects-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #1f2937;
+}
+
+.saved-projects-header p {
+    margin-top: 8px;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   BACK BUTTON
+===================================================== */
+
+.back-dashboard-button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #374151;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.back-dashboard-button:hover {
+    background: #f3f4f6;
+}
+
+
+/* =====================================================
+   COUNT
+===================================================== */
+
+.saved-projects-count {
+    margin-bottom: 20px;
+    color: #4b5563;
+    font-size: 16px;
+}
+
+.saved-projects-count strong {
+    color: #111827;
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   GRID
+===================================================== */
+
+.saved-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(350px, 1fr)
+    );
+    gap: 25px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.saved-project-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.saved-project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.saved-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.saved-card-header h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #1f2937;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.saved-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #ecfdf5;
+    color: #047857;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.saved-description {
+    margin-top: 18px;
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   PROJECT DETAILS
+===================================================== */
+
+.saved-project-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.saved-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.saved-detail span {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.saved-detail strong {
+    color: #374151;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   SAVED DATE
+===================================================== */
+
+.saved-date {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e5e7eb;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.saved-card-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+
+/* VIEW */
+
+.view-saved-button {
+    flex: 1;
+    padding: 11px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-saved-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* REMOVE */
+
+.remove-saved-button {
+    flex: 1;
+    padding: 11px;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    background: #fff1f2;
+    color: #be123c;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.remove-saved-button:hover {
+    background: #ffe4e6;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.no-saved-projects {
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.saved-empty-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: #9ca3af;
+}
+
+.no-saved-projects h2 {
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.no-saved-projects p {
+    color: #6b7280;
+}
+
+
+/* =====================================================
+   BROWSE BUTTON
+===================================================== */
+
+.browse-projects-button {
+    margin-top: 20px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.browse-projects-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =====================================================
+   LOADING / ERROR
+===================================================== */
+
+.saved-message,
+.saved-error {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.saved-message h2,
+.saved-error h2 {
+    color: #1f2937;
+}
+
+.saved-message p,
+.saved-error p {
+    color: #6b7280;
+}
+
+.saved-error button {
+    margin-top: 15px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .saved-projects-page {
+        padding: 25px 20px;
+    }
+
+    .saved-projects-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .saved-projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .saved-card-buttons {
+        flex-direction: column;
+    }
+}

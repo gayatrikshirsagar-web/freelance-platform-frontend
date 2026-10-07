@@ -1,0 +1,269 @@
+.admin-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+/* ================= HEADER ================= */
+
+.admin-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.admin-page-header h1 {
+    margin: 0;
+
+    font-size: 32px;
+
+    color: #1e293b;
+}
+
+.admin-page-header p {
+    margin-top: 7px;
+
+    color: #64748b;
+
+    font-size: 15px;
+}
+
+
+/* ================= DASHBOARD BUTTON ================= */
+
+.dashboard-button {
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #334155;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.dashboard-button:hover {
+    background: #1e293b;
+}
+
+
+/* ================= ERROR ================= */
+
+.admin-error {
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    padding: 15px 18px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+
+/* ================= MESSAGE ================= */
+
+.admin-message {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ================= TABLE CONTAINER ================= */
+
+.admin-table-container {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    overflow-x: auto;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= TABLE ================= */
+
+.admin-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+}
+
+
+.admin-table thead {
+    background: #f1f5f9;
+}
+
+
+.admin-table th {
+    padding: 15px;
+
+    text-align: left;
+
+    border-bottom: 2px solid #e2e8f0;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.admin-table td {
+    padding: 15px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+.admin-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* ================= STATUS ================= */
+
+.status-badge {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+.status-pending {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+
+.status-verified {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+
+.status-rejected {
+    background: #fee2e2;
+
+    color: #991b1b;
+}
+
+
+/* ================= ACTION BUTTONS ================= */
+
+.action-buttons {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.verify-button,
+.reject-button {
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.verify-button {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+
+.verify-button:hover {
+    background: #bbf7d0;
+}
+
+
+.reject-button {
+    background: #fee2e2;
+
+    color: #991b1b;
+}
+
+
+.reject-button:hover {
+    background: #fecaca;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    .admin-page {
+        padding: 15px;
+    }
+
+    .admin-page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .admin-page-header h1 {
+        font-size: 26px;
+    }
+
+    .dashboard-button {
+        width: 100%;
+    }
+}

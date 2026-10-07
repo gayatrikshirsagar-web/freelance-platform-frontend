@@ -1,0 +1,351 @@
+/* ==========================================
+   PAGE
+========================================== */
+
+.student-profile-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding-bottom: 50px;
+}
+
+
+/* ==========================================
+   TOP BAR
+========================================== */
+
+.student-profile-topbar {
+    background: white;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    gap: 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.student-profile-topbar h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #1f2937;
+}
+
+.profile-back-button {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.profile-back-button:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   MAIN CONTAINER
+========================================== */
+
+.student-profile-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* ==========================================
+   PROFILE HEADER
+========================================== */
+
+.profile-header-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-avatar span {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.profile-header-info {
+    flex: 1;
+}
+
+.profile-header-info h2 {
+    margin: 0 0 7px;
+    font-size: 25px;
+    color: #111827;
+}
+
+.profile-header-info p {
+    margin: 5px 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.verification-badge {
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.profile-loading {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-loading h2 {
+    color: #4b5563;
+}
+
+
+/* ==========================================
+   SUCCESS MESSAGE
+========================================== */
+
+.profile-success {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+    padding: 13px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* ==========================================
+   ERROR MESSAGE
+========================================== */
+
+.profile-error {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    padding: 13px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.student-profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.profile-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.profile-section h2 {
+    margin: 0 0 25px;
+    color: #1f2937;
+    font-size: 20px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 15px;
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+
+/* ==========================================
+   FIELD
+========================================== */
+
+.profile-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-field label {
+    margin-bottom: 8px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-field input,
+.profile-field select,
+.profile-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    padding: 11px 13px;
+    font-size: 14px;
+    color: #111827;
+    background: white;
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.profile-field input:focus,
+.profile-field select:focus,
+.profile-field textarea:focus {
+    border-color: #2563eb;
+}
+
+.profile-field input:disabled {
+    background: #f3f4f6;
+    color: #6b7280;
+    cursor: not-allowed;
+}
+
+.profile-field textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.profile-field small {
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.profile-actions {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cancel-profile-button,
+.save-profile-button {
+    border: none;
+    padding: 11px 25px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancel-profile-button {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.cancel-profile-button:hover {
+    background: #d1d5db;
+}
+
+.save-profile-button {
+    background: #2563eb;
+    color: white;
+}
+
+.save-profile-button:hover {
+    background: #1d4ed8;
+}
+
+.save-profile-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .student-profile-topbar {
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5px;
+        min-height: 100px;
+    }
+
+    .student-profile-container {
+        width: 94%;
+    }
+
+    .profile-header-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-actions {
+        flex-direction: column-reverse;
+    }
+
+    .cancel-profile-button,
+    .save-profile-button {
+        width: 100%;
+    }
+}

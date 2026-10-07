@@ -1,0 +1,505 @@
+/* =====================================================
+   MAIN PAGE
+===================================================== */
+
+.client-applications-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.client-applications-header {
+    background: white;
+    padding: 25px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.client-applications-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #1f2937;
+}
+
+.client-applications-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+}
+
+
+/* =====================================================
+   HEADER BUTTONS
+===================================================== */
+
+.client-header-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.back-dashboard-button,
+.logout-button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.back-dashboard-button {
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+.back-dashboard-button:hover {
+    background: #e0e7ff;
+}
+
+.logout-button {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.logout-button:hover {
+    background: #fecaca;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.client-applications-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 35px 50px;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.applications-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.applications-summary h2 {
+    margin: 0;
+
+    color: #1f2937;
+    font-size: 24px;
+}
+
+.applications-summary span {
+    background: #e0e7ff;
+    color: #3730a3;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   APPLICATION CARD
+===================================================== */
+
+.application-card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 32px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.application-card-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.application-card-header h3 {
+    margin: 0;
+
+    font-size: 23px;
+
+    color: #111827;
+}
+
+.application-id {
+    margin: 7px 0 0;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.application-status {
+    flex-shrink: 0;
+
+    padding: 7px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.application-status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.application-status.accepted {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.application-status.rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.application-status.withdrawn {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+
+/* =====================================================
+   APPLICATION DETAILS
+===================================================== */
+
+.application-details {
+
+    display: grid;
+
+    /*
+       Three columns instead of four.
+       This prevents the details from
+       becoming too spread out.
+    */
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    column-gap: 45px;
+    row-gap: 28px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* Each label + value stay together */
+
+.detail-item {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    min-width: 0;
+}
+
+
+/* Label */
+
+.detail-label {
+    font-size: 14px;
+
+    color: #6b7280;
+
+    font-weight: 500;
+}
+
+
+/* Value */
+
+.detail-value {
+    font-size: 17px;
+
+    color: #111827;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/*
+   Applied On goes to the second row
+   because we have 3 columns.
+*/
+
+.detail-item:nth-child(4) {
+    grid-column: 1;
+}
+
+
+/* =====================================================
+   COVER LETTER
+===================================================== */
+
+.cover-letter-section {
+    margin-top: 25px;
+}
+
+.cover-letter-section h4 {
+    margin: 0 0 10px;
+
+    font-size: 18px;
+
+    color: #1f2937;
+}
+
+.cover-letter-section p {
+    margin: 0;
+
+    background: #f9fafb;
+
+    padding: 16px 18px;
+
+    border-radius: 8px;
+
+    line-height: 1.6;
+
+    color: #4b5563;
+
+    min-height: 25px;
+
+    word-break: break-word;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.application-card-actions {
+    margin-top: 22px;
+
+    display: flex;
+
+    justify-content: stretch;
+}
+
+.view-project-button {
+    width: 100%;
+
+    border: none;
+
+    background: #4f46e5;
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: background 0.2s ease;
+}
+
+.view-project-button:hover {
+    background: #4338ca;
+}
+
+
+/* =====================================================
+   LOADING / ERROR
+===================================================== */
+
+.applications-message,
+.applications-error,
+.no-applications {
+    background: white;
+
+    padding: 50px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.applications-message {
+    color: #4b5563;
+}
+
+.applications-error {
+    color: #b91c1c;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.empty-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.no-applications h2 {
+    color: #1f2937;
+}
+
+.no-applications p {
+    color: #6b7280;
+
+    margin-bottom: 25px;
+}
+
+.no-applications button {
+    border: none;
+
+    background: #4f46e5;
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .client-applications-header {
+        padding: 20px 25px;
+    }
+
+    .client-applications-content {
+        padding: 25px;
+    }
+
+    .application-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        column-gap: 30px;
+    }
+
+    .detail-item:nth-child(4) {
+        grid-column: auto;
+    }
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .client-applications-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .client-header-actions {
+        width: 100%;
+    }
+
+    .back-dashboard-button,
+    .logout-button {
+        flex: 1;
+    }
+
+    .client-applications-content {
+        padding: 20px 15px;
+    }
+
+    .application-card {
+        padding: 22px;
+    }
+
+    .application-card-header {
+        flex-direction: column;
+    }
+
+    .application-details {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .detail-item:nth-child(4) {
+        grid-column: auto;
+    }
+
+    .application-card-actions {
+        width: 100%;
+    }
+
+    .view-project-button {
+        width: 100%;
+    }
+}

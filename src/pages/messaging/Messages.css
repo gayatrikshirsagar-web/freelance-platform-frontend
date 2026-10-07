@@ -1,0 +1,135 @@
+.messages-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 30px;
+}
+
+.messages-container {
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.messages-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.messages-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.messages-header p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.messages-back-button {
+    border: none;
+    background: #f1f3f5;
+    padding: 10px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.messages-content {
+    padding: 25px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-message-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+
+    background: white;
+}
+
+.project-info h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.project-info p {
+    margin: 4px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.open-chat-button {
+    border: none;
+    background: #2563eb;
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.open-chat-button:hover {
+    background: #1d4ed8;
+}
+
+.messages-status {
+    text-align: center;
+    color: #777;
+    margin-top: 40px;
+}
+
+.messages-error {
+    text-align: center;
+    color: #dc2626;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+
+    .messages-page {
+        padding: 10px;
+    }
+
+    .messages-container {
+        min-height: 90vh;
+    }
+
+    .messages-header {
+        padding: 15px;
+    }
+
+    .messages-content {
+        padding: 15px;
+    }
+
+    .project-message-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .open-chat-button {
+        width: 100%;
+    }
+}
